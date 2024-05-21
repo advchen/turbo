@@ -33,8 +33,6 @@ struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2) {
         p->next = list2;
         p = p->next;
     }
-    struct ListNode *mergedList = head->next;
-    free(head);
-    return mergedList;
+    return head->next;
 }
 
